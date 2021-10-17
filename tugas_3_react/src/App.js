@@ -1,6 +1,5 @@
 import React, {Component} from "react";
 import Header from "./Page/Header";
-import MenuUtama from "./Page/MenuUtama";
 import MenuMakanan from "./Page/MenuMakanan";
 import MenuTentangKami from "./Page/MenuTentangKami";
 import MenuKontak from "./Page/MenuKontak";
@@ -11,9 +10,7 @@ class App extends Component{
     return(
       <div>
         <Header/>        
-        <MenuUtama/>
         <MenuMakanan/>
-
         <center>
         <MenuTentangKami tentang="Warung nusantara Adalah Restoran Yang Bernuansa Makanan Nusantara,
         Kami Ada Untuk Anda Membuat Anda Menikmati Makanan Khas Nusantara"/>        
