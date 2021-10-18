@@ -1,11 +1,11 @@
 import React,{Component} from "react";
-import topEvents from "../Events/TopEvents";
+import TopEvents from "../Events/TopEvents";
 
 class Footer extends Component {
     render(){
         return(
             <div>
-                <topEvents/>
+                <TopEvents/>
                 <h3> Tugas 3 React Js </h3>
             </div>
         );

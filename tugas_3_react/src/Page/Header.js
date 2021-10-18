@@ -2,8 +2,7 @@ const Header = () =>{
     return(
         <div>
             <center>
-                <h4>Home | Product | Kontak | Tentang Kami</h4>
-                <h4>Selamat Datang Di Warung Nusantara</h4>                
+                <h4>Home | Product | Kontak | Tentang Kami</h4>           
             </center>
         </div>
     );

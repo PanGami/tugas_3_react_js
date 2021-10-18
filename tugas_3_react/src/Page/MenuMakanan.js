@@ -15,34 +15,50 @@ class MenuMakanan extends Component{
   rubahPesanan(){
     this.setState((state,props)=>{
       return{
-        pesan:state./*BelumDiisi*/
+        pesan:state.props
       };
     });
   }
   pesanan(e){
-    console.log(e.target./*BelumDiisi*/);
+    console.log(e.target.value);
   }
 
   render(){
     return(
       <div>
           <h3>Daftar Makanan Yang Kami Sediakan :</h3>
-          
-          <td>
-            <ListMakanan datalist="https://s3-ap-southeast-1.amazonaws.com/niomic/img/sample/nasipadang.jpg"/>
-          </td>
+          <table>
+            <tbody>
+              <tr>
+                <td>
+                  <ListMakanan datalist="https://s3-ap-southeast-1.amazonaws.com/niomic/img/sample/nasipadang.jpg"/>
+                  <center>
+                    <button onClick={this.pesanan}>Pesan Sekarang</button>
+                  </center>
+
+                </td>
           <td>
             <ListMakanan datalist="https://s3-ap-southeast-1.amazonaws.com/niomic/img/sample/sate.png"/>
+            <button onClick={this.pesanan}>Pesan Sekarang</button>
           </td>
           <td>
             <ListMakanan datalist="https://s3-ap-southeast-1.amazonaws.com/niomic/img/sample/sotolamongan.png"/>
+            <button onClick={this.pesanan}>Pesan Sekarang</button>
           </td>
           <td>
             <ListMakanan datalist="https://www.dbs.com/iwov-resources/images/newsroom/indonesia/Blog/masakan%20nusantara/nasi%20kentut.png"/>
+            <button onClick={this.pesanan}>Pesan Sekarang</button>
           </td>
           <td>
             <ListMakanan datalist="https://s3-ap-southeast-1.amazonaws.com/niomic/img/sample/nasipadang.jpg"/>
+            <button onClick={this.pesanan}>Pesan Sekarang</button>
           </td>
+          </tr>
+          </tbody>
+          </table>
+          <br/>
+          <input type="text" onChange={this.pesanan} />
+          <h3>Pesanan Anda : {this.state.datalist}</h3>
       </div>
     );
   }
